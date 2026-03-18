@@ -49,10 +49,11 @@ export default defineConfig(async config => {
 
   return {
     ...(await sharedConfig(config)),
-    base: "",
+    base: '/pokerogue/',
     publicDir: command === "serve" ? "assets" : false,
     server: {
       port: Number.isNaN(envPort) ? 8000 : envPort,
+      allowedHosts: ['.trycloudflare.com'],
     },
   } satisfies UserConfig;
 });
