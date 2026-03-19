@@ -238,7 +238,7 @@ export class MenuUiHandler extends MessageUiHandler {
       });
     };
 
-    if (isBeta || isDev || isApp) {
+    if (true) {
       manageDataOptions.push({
         label: i18next.t("menuUiHandler:importSession"),
         handler: () => {
@@ -293,7 +293,7 @@ export class MenuUiHandler extends MessageUiHandler {
       },
       keepOpen: true,
     });
-    if (isBeta || isDev || isApp) {
+    if (true) {
       manageDataOptions.push({
         label: i18next.t("menuUiHandler:importData"),
         handler: () => {
